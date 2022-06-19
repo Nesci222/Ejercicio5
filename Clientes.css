@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Header";
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+body {
+    font-family: "Header";
+}
+
+.logo {
+    width: 250px;
+    height: 140px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Header";
+    font-size: x-large;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-ul-li {
+    padding: 10px;
+    transition-timing-function: ease;
+	transition-duration: 2s;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #2e5fad;
+    text-align: center;
+}
+
+.nav li:hover {
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    width: 100%;
+}
+
+.container5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    align-items: center;    
+    justify-content: space-around;
+    background-color: #757575;
+}
+
+@media (max-width: 1200px) {
+    .container5 {
+        width: 100%;
+        height: 120vh;
+    }
+}
+
+@media (max-width: 799px) {
+    .container5 {
+        width: 100%;
+        height: 200vh;
+    }
+}
+
+@media (max-width: 799px) {
+    h2 {
+        text-align: center;
+    } 
+}
+
+.project {
+    width: 360px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 2px black;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 1.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.project img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.project p {
+    padding: 10px;
+}
+
+.project:hover{
+    transform: translateY(-20px);     
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 150px;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 120px;
+    padding: 10px;
+}
+
+.CR {
+    height: 50px;
+}

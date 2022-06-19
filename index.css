@@ -1,0 +1,310 @@
+
+@font-face {
+    font-family: "Header";
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+body {
+    font-family: "Header";
+}
+
+.logo {
+    width: 250px;
+    height: 140px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Header";
+    font-size: x-large;
+}
+
+.nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-ul-li {
+    padding: 10px;
+    transition-timing-function: ease;
+	transition-duration: 2s;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #2e5fad;
+    text-align: center;
+}
+
+.nav li:hover {
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+@media (max-width: 799px) {
+    .container1 {
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.container1 p {
+    display: flex;
+    width: 40%;
+}
+
+.container1 img {
+    display: flex;
+    position: relative;
+    left: 15%;
+    width: 20%;
+    height: 70%;
+    border-radius: 2%;
+    background-color: #565656;
+    padding: 5px;
+}
+
+@media (max-width: 1100px) {
+    .container1 img{
+        position: relative;
+        left: -150px;
+    }
+}
+
+@media (max-width: 799px) {
+    .container1 img{
+        width: 150px;
+        height: 150px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.container1 a {
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: -70vw;
+    border-radius: 10%;
+    text-decoration: none;
+    padding: 8px;
+}
+
+@media (max-width: 1100px) {
+    .container1 a{
+        display: none;
+    }
+}
+
+.botonskills {
+    color: rgb(255, 255, 255);
+    background-color: #2e5fad;
+    transition-timing-function: ease;
+	transition-duration: 2s;
+    width: 80px;
+    justify-content: center;
+}
+
+.botonskills:hover {
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+.botonbeneficios {
+    color: rgb(255, 255, 255);
+    background-color: #2e5fad;
+    transition-timing-function: ease;
+	transition-duration: 2s;
+    width: 80px;
+    justify-content: center;
+}
+
+.botonbeneficios:hover {
+    transform: scale(1.2);
+	cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+    background-color: #757575;
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+@media (max-width: 799px) {
+    .container2 {
+        width: 100%;
+        height: 90vh;
+    }
+}
+
+.container2 p {
+    display: flex;
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.tituloskills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: #white;
+    padding-top: 50px;
+    width: 100%;
+}
+
+@media (max-width: 799px) {
+    .tituloskills {
+        text-align: center;
+    }
+    .titulobeneficios {
+        text-align: center;
+    } 
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+@media (max-width: 799px) {
+    .container3 {
+        width: 100%;
+        height: 90vh;
+        flex-direction: column;
+    }
+}
+
+.item-nav {
+    height: 110px;
+    width: 110px;
+    object-fit: contain;
+    padding: 0px 50px 0px 50px;
+    transition-timing-function: ease;
+	transition-duration: 3s;
+}
+
+.item-nav:hover {
+    transform: scale(1.4);
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #757575;
+    width: 100%;
+    height: 60vh;
+    align-items: center;    
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+    .container4 {
+        width: 100%;
+        height: 120vh;
+    }
+}
+
+@media (max-width: 799px) {
+    .container4 {
+        width: 100%;
+        height: 200vh;
+    }
+}
+
+.titulobeneficios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    background-color: #757575;
+    padding-top: 50px;
+    width: 100%;
+}
+
+@media (max-width: 799px) {
+    .titulobeneficios {
+        text-align: center;
+    } 
+}
+
+.card {
+    width: 360px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px 2px black;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: all 1.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.card img {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card:hover{
+    transform: translateY(-20px);     
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 150px;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    height: 120px;
+    padding: 10px;
+}
+
+.CR {
+    height: 50px;
+}
